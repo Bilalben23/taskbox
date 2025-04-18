@@ -21,7 +21,7 @@ export const MockedState = {
         { ...TaskStories.Default.args.task, id: '6', title: 'Task 6' },
     ] as TaskData[],
     status: 'idle',
-    error: null,
+    error: null
 };
 
 // A super-simple mock of a redux store

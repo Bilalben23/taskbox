@@ -1,35 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Provider } from 'react-redux';
+import InboxScreen from './components/InboxScreen';
+import store from './lib/store';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Provider store={store}>
+      <InboxScreen />
+    </Provider>
   );
 }
 
 export default App;
+
+// connected component
+// Mercurochrome
+// Mocking API Services: Mock Service Worker (MSW)
+// Mock Service Worker is an API mocking library, it relies on service workers to capture network requests and provides mocked data in responses. 
+// MSW intercepted our remote API call and provided the appropriate response.
+
+// Storybook test runner: 
+
+// npm i @storybook/test-runner
+
+// Chromatic: a free publishing service made by the Storybook maintainers. It allows us te deploy and host our Storybook safely and securely in the cloud.
+// continuous deployment (CD) & continuous integration (CI)

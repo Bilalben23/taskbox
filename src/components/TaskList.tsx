@@ -27,6 +27,7 @@ export default function TaskList() {
         // We're dispatching the Archive event back to our store
         dispatch(updateTaskState({ id: value, newTaskState: 'TASK_ARCHIVED' }));
     };
+
     const LoadingRow = (
         <div className="loading-item">
             <span className="glow-checkbox" />
@@ -35,6 +36,7 @@ export default function TaskList() {
             </span>
         </div>
     );
+
     if (status === "loading") {
         return (
             <div className="list-items" data-testid="loading" key="loading">
@@ -47,6 +49,7 @@ export default function TaskList() {
             </div>
         );
     }
+
     if (tasks.length === 0) {
         return (
             <div className="list-items" key="empty" data-testid="empty">
