@@ -24,3 +24,17 @@ export default App;
 
 // Chromatic: a free publishing service made by the Storybook maintainers. It allows us te deploy and host our Storybook safely and securely in the cloud.
 // continuous deployment (CD) & continuous integration (CI)
+
+/*
+  - visual tests or visual regression test: are designed to catch changes in appearance, they work by capturing screenshots of every story and comparing them commit-to-commit to surface changes. It's perfect for verifying graphical elements like layout, color, size, and contrast.
+
+  - visual regression testing relies on comparing images of the newly rendered UI code to the baseline images. if a UI change is caught, we'll notified.
+*/
+/*
+  * we have encountered three types of tests:
+    - Manual tests
+    - accessibility tests
+    - component tests
+*/
+
+// aforementioned: مذكور سابقًا
