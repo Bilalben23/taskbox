@@ -25,7 +25,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=chpt_531d456135493b8"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
@@ -62,7 +63,6 @@
       "plugin:storybook/recommended"
     ]
   },
-  "packageManager": "yarn@4.5.0",
   "msw": {
     "workerDirectory": [
       "public"
